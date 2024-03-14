@@ -3,21 +3,25 @@
 @import "../../variables.scss";
 /*****************************/
 /* HEADER */
+.desktop-hidden {
+  display: none;
+}
+
 #header {
-  padding: 1.5em;
+  padding: 1em 1.5em;
   position: fixed;
   width: 100%;
   z-index: 100;
   /* JUST TESTING */
   &.transparent {
-    // background-color:transparent;
-    background-color: grey;
+    background-color:transparent;
+    // background-color: #eae2db;
     transition: background-color 0.3s;
     &.non-transparent {
-      background-color: #1c1c1c;
+      background-color: #eae2db;
       transition: background-color 0.3s;
-      -webkit-box-shadow: -4px 0px 15px 2px rgba(0, 0, 0, 0.1);
-      box-shadow: -4px 0px 15px 2px rgba(0, 0, 0, 0.1);
+      // -webkit-box-shadow: -4px 0px 15px 2px rgba(0, 0, 0, 0.1);
+      // box-shadow: -4px 0px 15px 2px rgba(0, 0, 0, 0.1);
       .navigation-wrapper {
         #menuToggle span {
           background: $basic-primary;
@@ -37,7 +41,9 @@
   a {
     text-decoration: none;
     .header-logo {
-      display: none;
+      // display: none;
+      width: 12em;
+      fill: $basic-primary;
       &:hover {
         color: #333333;
       }
@@ -52,10 +58,35 @@
   /* NAVIGATION */
   .navigation-wrapper {
     cursor: pointer;
-    order: 1;
+    order: 2;
     display: flex;
     align-items: center;
     letter-spacing: 0.1em;
+
+    .desktop-navigation {
+      display: flex;
+        align-items: center;
+        // padding-left: 2.5em;
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        line-height: 0;
+        li {
+          margin-right: 1.75em;
+          font-size: 0.9em;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+
+          }
+        }
+      }
+
+    }
+
     #menuToggle {
       display: block;
       position: relative;
@@ -67,13 +98,17 @@
     }
     #menuToggle a {
       text-decoration: none;
-      color: #fff;
-      transition: color 0.3s ease;
-      transition: background-color 0.3s;
+
+      li {
+        color: $basic-primary !important;
+        transition: color 0.3s ease;
+        transition: background-color 0.3s;
+      }
     }
     #menuToggle a:hover {
       li {
-        background-color: $basic-primary;
+        color: $basic-white !important;
+        background-color: $basic-primary !important;
         transition: background-color 0.3s;
       }
     }
@@ -92,10 +127,10 @@
     #menuToggle span {
       display: block;
       width: 27px;
-      height: 2px;
-      margin-bottom: 5px;
+      height: 1px;
+      margin-bottom: 6px;
       position: relative;
-      background: $basic-white;
+      background: $basic-primary;
       transform-origin: 4px 0px;
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
       z-index: 1;
@@ -128,7 +163,7 @@
       margin: -3.3em 0 0 -56px;
       padding-top: 72px;
       color: #ffffff;
-      background: #1c1c1c;
+      background: #c7b7a8;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
@@ -167,9 +202,9 @@
   }
   /* LOGO */
   .logo-wrapper {
-    order: 2;
+    order: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     #logo {
       width: 9em;
     }
@@ -190,7 +225,7 @@
       svg {
         width: 1.8em;
         height: 1.8em;
-        fill: #fff;
+        fill: #7b685e;
         transition: fill 0.3s;
       }
     }
@@ -199,7 +234,7 @@
       svg {
         width: 1.8em;
         height: 1.8em;
-        fill: #fff;
+        fill: #7b685e;
         transition: fill 0.3s;
       }
     }
@@ -213,6 +248,31 @@
 /*****************************/
 @media (max-width: 700px) {
   #menu {
-    margin: -3.4em 0 0 -56px !important;
+    margin: -4.5em 0 0 -56px !important;
   }
+  .desktop-hidden {
+    display: block;
+  }
+  .navigation-wrapper {
+    order: 1 !important;
+    &.col-8 {
+      width: 33%;
+    }
+    .desktop-navigation {
+      display: none !important;
+    }
+  }
+  .logo-wrapper {
+    order: 2 !important;
+    justify-content: center;
+    &.col-2 {
+      width: 33%;
+    }
+  }
+  .contact-wrapper {
+    &.col-2 {
+      width: 33%;
+    }
+  }
+
 }
