@@ -1,0 +1,56 @@
+/*****************************/
+/* IMPORTS */
+@import "../../../variables.scss";
+section {
+  &#sub-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    .sub-nav-item {
+      width: 24%;
+      height: 15em;
+      background-color: transparent;
+      border: 1px solid $basic-secondary;
+      margin-right: 0.5em;
+      border-radius: 0.25em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s ease-in;
+      font-size: 1.25em;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background-color: $basic-secondary;
+        transition: background-color 0.2s ease-out;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/* MOBILE */
+/*****************************/
+@media (max-width: 860px) {
+  section {
+    &#sub-navigation {
+      display: flex;
+      flex-wrap: wrap;
+      .sub-nav-item {
+        width: 95%;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

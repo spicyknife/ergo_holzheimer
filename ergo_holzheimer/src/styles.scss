@@ -1,35 +1,56 @@
 /* IMPORTS */
 @import "../src/variables.scss";
 body {
-  color: #333333;
+  color: #2c1c0a;
   font-weight: 100;
   font-style: normal;
-  letter-spacing: 0.1em;
   margin: 0;
-  font-family: 'roboto-condensed' sans-serif;
   height: 120vh;
-  background-color: #fffaf4;
+  background-color: #f8f6f1;
+  font-size: 1em;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 p {
   line-height: 1.8em;
   font-weight: 100;
-  color: #fff;
-  font-family: 'roboto-condensed' sans-serif;
+  font-family: source-sans-pro, sans-serif;
+  font-weight: 200;
+  font-style: normal;
   font-size: 1.1em;
+  letter-spacing: 0.04em;
 }
 .highlight-color {
   color: $basic-primary;
 }
 .page {
-  background-color: #262626;
+  background-color: #f8f6f1;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: intercom, sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 0.5em;
+  color: $basic-primary;
+  font-family: looking-flowers-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0.25em;
+  line-height: 1;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h2 {
+  &.subline {
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.3em;
+  }
 }
 a {
   text-decoration: none;
@@ -43,13 +64,13 @@ li {
   font-size: 1.2em;
 }
 .content-page {
-  padding: 8em 4em;
+  padding: 2.5em 4em;
   h1 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
   }
   h2 {
-    font-size: 1.4em;
-    margin-top: 1.5em;
+    font-size: 2.2em;
+    margin-top: 1em;
   }
   #spicyknife {
     width: 8em;

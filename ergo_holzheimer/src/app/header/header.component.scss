@@ -12,14 +12,16 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 0;
   /* JUST TESTING */
   &.transparent {
     background-color:transparent;
     // background-color: #eae2db;
     transition: background-color 0.3s;
     &.non-transparent {
-      background-color: #eae2db;
+      background-color: $basic-secondary;
       transition: background-color 0.3s;
+      opacity: 0.95;
       // -webkit-box-shadow: -4px 0px 15px 2px rgba(0, 0, 0, 0.1);
       // box-shadow: -4px 0px 15px 2px rgba(0, 0, 0, 0.1);
       .navigation-wrapper {
@@ -43,7 +45,7 @@
     .header-logo {
       // display: none;
       width: 12em;
-      fill: $basic-primary;
+      fill: #000;
       &:hover {
         color: #333333;
       }
@@ -66,7 +68,6 @@
     .desktop-navigation {
       display: flex;
         align-items: center;
-        // padding-left: 2.5em;
       ul {
         list-style-type: none;
         display: flex;
@@ -75,12 +76,9 @@
         line-height: 0;
         li {
           margin-right: 1.75em;
-          font-size: 0.9em;
+          font-size: 1.1em;
           &:last-child {
             margin-right: 0;
-          }
-          a {
-
           }
         }
       }
@@ -161,9 +159,9 @@
       width: 300px;
       height: 106vh;
       margin: -3.3em 0 0 -56px;
-      padding-top: 72px;
+      padding-top: 6.7em;
       color: #ffffff;
-      background: #c7b7a8;
+      background: #e3ded7;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
@@ -225,7 +223,7 @@
       svg {
         width: 1.8em;
         height: 1.8em;
-        fill: #7b685e;
+        fill: $basic-primary;
         transition: fill 0.3s;
       }
     }
@@ -234,7 +232,7 @@
       svg {
         width: 1.8em;
         height: 1.8em;
-        fill: #7b685e;
+        fill: $basic-primary;
         transition: fill 0.3s;
       }
     }
@@ -246,7 +244,7 @@
 /*****************************/
 /* MOBILE */
 /*****************************/
-@media (max-width: 700px) {
+@media (max-width: 1080px) {
   #menu {
     margin: -4.5em 0 0 -56px !important;
   }
@@ -264,7 +262,7 @@
   }
   .logo-wrapper {
     order: 2 !important;
-    justify-content: center;
+    justify-content: center !important;
     &.col-2 {
       width: 33%;
     }

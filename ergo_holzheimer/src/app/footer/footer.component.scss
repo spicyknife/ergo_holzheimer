@@ -1,0 +1,28 @@
+/*****************************/
+/* IMPORTS */
+@import "../../variables.scss";
+/*****************************/
+/* FOOTER */
+#footer {
+  padding: 2.5em 1.5em;
+  background-color: $basic-primary-hover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer-links {
+    a {
+      color: $basic-white;
+      margin-right : 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .socials {
+    svg {
+      width: 2em;
+      height: 2em;
+    }
+  }
+
+}
