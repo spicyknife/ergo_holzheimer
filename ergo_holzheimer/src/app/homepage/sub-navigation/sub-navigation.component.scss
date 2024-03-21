@@ -7,25 +7,55 @@ section {
     justify-content: center;
     padding: 2em 0;
     .sub-nav-item {
-      width: 24%;
-      height: 15em;
-      background-color: transparent;
+      width: 32%;
+      height: 20em;
       border: 1px solid $basic-secondary;
       margin-right: 0.5em;
       border-radius: 0.25em;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 0.2s ease-in;
-      font-size: 1.25em;
-      &:last-child {
-        margin-right: 0;
+      background-size: cover;
+      background-position: center;
+
+      &.leistungen {
+        background-image: url('../../../assets/img/sub-nav-leistungen.jpg');
       }
+      &.praxis {
+        background-image: url('../../../assets/img/sub-nav-praxis.jpg');
+      }
+      &.team {
+        background-image: url('../../../assets/img/sub-nav-team.jpg');
+      }
+    }
+    .sub-nav-item-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .4s;
       &:hover {
-        background-color: $basic-secondary;
-        transition: background-color 0.2s ease-out;
+        background-color: $basic-primary-hover;
+        opacity: .8;
+        transition: .4s;
         color: #fff;
         cursor: pointer;
+        z-index: 100;
+        .caption {
+          color: $basic-white;
+        }
+      }
+      .caption {
+        font-size: 3.25em;
+        color: $basic-white;
+        font-family: looking-flowers-script, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      &:last-child {
+        margin-right: 0;
       }
     }
   }

@@ -7,6 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('../../../assets/img/dummy-theme.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   .intro-text {
     width: 100%;
     div {
@@ -20,14 +24,18 @@
   img {
     width: 100%;
   }
-  .tease-arrow {
-    width: 3em;
-    height: 3em;
+  a {
+    display: block;
     position: absolute;
-    bottom: 1em;
-    opacity: 1;
-    &.hide {
-      opacity: 0;
+      bottom: 1em;
+    .tease-arrow {
+      width: 3em;
+      height: 3em;
+
+      opacity: 1;
+      &.hide {
+        opacity: 0;
+      }
     }
   }
 }
