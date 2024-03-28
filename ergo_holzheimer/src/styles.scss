@@ -6,12 +6,13 @@ body {
   font-weight: 100;
   font-style: normal;
   margin: 0;
-  // height: 120vh;
+  height: 100%;
   background-color: #f8f6f1;
   font-size: 1em;
   font-family: source-sans-pro, sans-serif;
   font-weight: 200;
   font-style: normal;
+
 }
 p {
   line-height: 1.8em;
@@ -68,7 +69,7 @@ li {
   font-size: 1.2em;
 }
 .content-page {
-  padding: 2.5em ;
+  padding: 1.5em ;
   max-width: 1400px;
   margin: 0 auto;
   h1 {
