@@ -4,6 +4,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutLenaComponent } from './about-lena/about-lena.component';
 import { SubNavigationComponent } from './sub-navigation/sub-navigation.component';
+import { TeamComponent } from '../team/team.component';
 
 @Component({
   selector: 'app-homepage',

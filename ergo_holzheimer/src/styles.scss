@@ -1,5 +1,6 @@
 /* IMPORTS */
 @import "../src/variables.scss";
+
 body {
   color: #2c1c0a;
   font-weight: 100;
@@ -20,6 +21,9 @@ p {
   font-style: normal;
   font-size: 1.1em;
   letter-spacing: 0.04em;
+}
+.sub-page-spacer {
+  margin-top: 10em;
 }
 .highlight-color {
   color: $basic-primary;
@@ -93,3 +97,4 @@ li {
     }
 
 }
+

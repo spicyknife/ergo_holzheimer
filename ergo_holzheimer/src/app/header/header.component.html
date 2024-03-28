@@ -13,11 +13,14 @@
             <span></span>
             <span></span>
             <ul id="menu">
-              <a routerLink="/home"><li class="subnav-item">Home</li></a>
-              <a href="/#leistungen" routerLinkActive="router-link-active"
-                ><li class="subnav-item">Leistungen</li></a
+              <a routerLink="/home"><li class="subnav-item">Start</li></a>
+              <a routerLink="/leistungen" routerLinkActive="router-link-active"
+                ><li class="/subnav-item">Leistungen</li></a
               >
-              <a href="/#about-me"><li class="subnav-item">Über uns</li></a>
+              <a routerLink="/praxis"><li class="subnav-item">Praxis</li></a>
+              <a routerLink="/team" routerLinkActive="router-link-active"
+                ><li class="subnav-item">Impressum</li></a
+              >
               <a routerLink="/impressum" routerLinkActive="router-link-active"
                 ><li class="subnav-item">Impressum</li></a
               >
@@ -30,21 +33,21 @@
         <div class="desktop-navigation">
           <ul>
             <li>
-              <a href="#"> Start </a>
+              <a routerLink="/home"> Start </a>
             </li>
             <li>
-              <a href="#">Leistungen</a>
-            </li>
-
-            <li>
-              <a href="#">Praxis</a>
-            </li>
-            <li>
-              <a href="#">Team</a>
+              <a routerLink="/leistungen">Leistungen</a>
             </li>
 
             <li>
-              <a href="#">Kontakt</a>
+              <a routerLink="/praxis">Praxis</a>
+            </li>
+            <li>
+              <a routerLink="/team">Team</a>
+            </li>
+
+            <li>
+              <a routerLink="/kontakt">Kontakt</a>
             </li>
           </ul>
         </div>
