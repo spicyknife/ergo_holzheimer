@@ -1,6 +1,49 @@
 /*****************************/
 /* IMPORTS */
 @import "../../variables.scss";
+/*****************************/
+/*****************************/
+/* TEAM */
+#team {
+  .team-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .team-member {
+      width: 30%;
+      text-align: center;
+      img {
+        border-radius: 50%;
+        width: 85%;
+        margin-bottom: 1em;
+      }
+      p {
+        strong {
+        }
+      }
+    }
+  }
+}
+/*****************************/
+/* MOBILE */
+@media (max-width: 860px) {
+
+  #team {
+    .team-wrapper {
+      display: block;
+      .team-member {
+        width: 100%;
+        margin-bottom: 3em;
+        img {
+          width: 70%;
+        }
+      }
+    }
+
+  }
+}
+/*****************************/
+/*****************************/
 .intro-wrapper {
   width: 100%;
   height: 50vh;
@@ -40,3 +83,4 @@
     }
   }
 }
+/*****************************/

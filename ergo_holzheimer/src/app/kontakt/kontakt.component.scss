@@ -17,6 +17,9 @@
     .kontakt-info-wrapper {
       width: 48%;
       margin-top: 3em;
+      a {
+        color: $basic-white;
+      }
       .maps {
         width: 100%;
         height: 500px;
