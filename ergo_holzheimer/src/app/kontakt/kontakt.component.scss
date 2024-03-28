@@ -5,7 +5,44 @@
   background-color: #c4b7ac;
   padding-top: 10em;
   color: #241600;
-  h1 {
+  h1,
+  h2 {
     color: #241600;
+    margin-bottom: 0.5em;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .kontakt-info-wrapper {
+      width: 48%;
+      margin-top: 3em;
+      .maps {
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+
+}
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/* MOBILE */
+/*****************************/
+@media (max-width: 980px) {
+
+  #kontakt {
+    .flex {
+      display: block;
+      .kontakt-info-wrapper {
+        width: 100%;
+        margin-bottom: 5em;
+        .maps {
+          margin-top: 1em;
+        }
+      }
+    }
   }
 }

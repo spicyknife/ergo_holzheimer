@@ -6,7 +6,7 @@ body {
   font-weight: 100;
   font-style: normal;
   margin: 0;
-  height: 120vh;
+  // height: 120vh;
   background-color: #f8f6f1;
   font-size: 1em;
   font-family: source-sans-pro, sans-serif;
@@ -39,7 +39,7 @@ h4 {
   font-family: looking-flowers-script, sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
   line-height: 1;
 }
 h1 {
@@ -69,6 +69,8 @@ li {
 }
 .content-page {
   padding: 2.5em ;
+  max-width: 1400px;
+  margin: 0 auto;
   h1 {
     margin-bottom: 0.25em;
   }
@@ -93,7 +95,7 @@ li {
     font-size: 0.9em;
   }
     .content-page {
-      padding: 8em 1.75em;
+      padding: 1.5em 1.75em;
     }
 
 }
