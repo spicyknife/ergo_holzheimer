@@ -1,17 +1,22 @@
 /* IMPORTS */
 @import "../src/variables.scss";
-
+app-root {
+  height:100%;
+}
 body {
   color: #2c1c0a;
   font-weight: 100;
   font-style: normal;
   margin: 0;
   height: 100%;
-  background-color: #f8f6f1;
+  // background-color: #f8f6f1;
+  background-color: #c4b7ac;
   font-size: 1em;
   font-family: source-sans-pro, sans-serif;
   font-weight: 200;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
 
 }
 p {
@@ -29,8 +34,13 @@ p {
 .highlight-color {
   color: $basic-primary;
 }
-.page {
+.homepage {
   background-color: #f8f6f1;
+}
+
+.page {
+  background-color: #85735f;
+  height: 100vh;
 }
 h1,
 h2,

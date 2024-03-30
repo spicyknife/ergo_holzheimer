@@ -3,17 +3,20 @@
 @import "../../variables.scss";
 /*****************************/
 /* FOOTER */
+
 footer {
   width: 100%;
+
   background-color: $basic-primary-hover;
+  flex-shrink: 0;
 }
 #footer {
   padding: 2.5em 1.5em;
-
   display: flex;
   justify-content: space-between;
   max-width: 1400px;
   margin: 0 auto;
+
   .footer-links {
     a {
       color: $basic-white;
