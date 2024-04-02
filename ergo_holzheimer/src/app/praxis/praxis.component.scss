@@ -41,3 +41,51 @@
     }
   }
 }
+#praxis {
+  text-align: left;
+  h2 {
+    margin-top: 1em;
+  }
+  .carousel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4em;
+    .carousel {
+      width: 48%;
+    }
+    .carousel-image {
+      width: 48%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
+.carousel-control-next, .carousel-control-prev {
+  top: 3.3em;
+  // background-color: $basic-primary;
+  :hover {
+    transition: none;
+  }
+}
+/*****************************/
+/*****************************/
+/*****************************/
+/*****************************/
+/* MOBILE */
+/*****************************/
+@media (max-width: 960px) {
+  .carousel-wrapper {
+    display: block !important;
+    justify-content: space-between;
+    margin-bottom: 4em;
+    .carousel {
+      width: 100% !important;
+      margin-bottom: 3em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
