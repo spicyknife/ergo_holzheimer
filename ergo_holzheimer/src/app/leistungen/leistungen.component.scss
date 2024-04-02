@@ -19,6 +19,7 @@
         margin-bottom: 0.15em;
         font-size: 4em;
         color: $basic-white;
+        font-family: looking-flowers-script, sans-serif !important;
       }
     }
   }
@@ -43,7 +44,7 @@
 .leistungen-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 3em;
+  margin: 3em 0;
 
   .leistungen-content {
     width: 100%;

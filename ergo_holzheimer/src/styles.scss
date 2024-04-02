@@ -61,6 +61,7 @@ h4 {
   font-style: normal;
   margin-bottom: 0.5em;
   line-height: 1;
+  font-family: looking-flowers-script, sans-serif !important;
 }
 h1 {
   font-size: 2.7em;
@@ -70,7 +71,7 @@ h2 {
 }
 h2 {
   &.subline {
-    font-family: source-sans-pro, sans-serif;
+    font-family: source-sans-pro, sans-serif !important;
     font-weight: 200;
     font-style: normal;
     font-size: 1.2em;
@@ -87,11 +88,23 @@ a {
 li {
   font-size: 1.1em;
   list-style-type: circle;
+  margin-bottom: 0.5em;
+}
+.sublist {
+  margin-top: 0.5em;
+  li {
+    font-size: 1em;
+  list-style-type: circle;
+  }
 }
 .content-page {
   padding: 4.5em 1.5em;
   max-width: 1400px;
   margin: 0 auto;
+  h1,
+  h2 {
+    font-family: 'Forum' !important;
+  }
   h1 {
     margin-bottom: 0.25em;
   }
