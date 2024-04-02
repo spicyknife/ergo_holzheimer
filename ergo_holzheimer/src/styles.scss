@@ -3,14 +3,23 @@
 app-root {
   height:100%;
 }
+@font-face {
+  font-family: 'Forum';
+  src: url('../src/assets/fonts/Forum.woff2') format('woff2'),
+      url('../src/assets/fonts/Forum.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   color: #2c1c0a;
   font-weight: 100;
   font-style: normal;
   margin: 0;
   height: 100%;
-  // background-color: #f8f6f1;
-  background-color: #c4b7ac;
+  background-color: #f8f6f1;
+  // background-color: #c4b7ac;
   font-size: 1em;
   font-family: source-sans-pro, sans-serif;
   font-weight: 200;
@@ -39,7 +48,7 @@ p {
 }
 
 .page {
-  background-color: #85735f;
+  background-color: #f8f6f1;
   height: 100vh;
 }
 h1,
@@ -47,14 +56,14 @@ h2,
 h3,
 h4 {
   color: $basic-primary;
-  font-family: looking-flowers-script, sans-serif;
+  font-family: 'Forum';
   font-weight: 400;
   font-style: normal;
   margin-bottom: 0.5em;
   line-height: 1;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2.7em;
 }
 h2 {
   font-size: 2.5em;
@@ -64,7 +73,7 @@ h2 {
     font-family: source-sans-pro, sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 a {
@@ -76,10 +85,11 @@ a {
   }
 }
 li {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  list-style-type: circle;
 }
 .content-page {
-  padding: 1.5em ;
+  padding: 4.5em 1.5em;
   max-width: 1400px;
   margin: 0 auto;
   h1 {
@@ -87,7 +97,7 @@ li {
   }
   h2 {
     font-size: 2.2em;
-    margin-top: 1em;
+    // margin-top: 1em;
   }
   #spicyknife {
     width: 8em;
