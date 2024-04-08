@@ -11,6 +11,14 @@ app-root {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'WBranding';
+  src: url('../src/assets/fonts/wonderful-branding.woff2') format('woff2'),
+      url('../src/assets/fonts/wonderful-branding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   color: #2c1c0a;
@@ -102,7 +110,9 @@ li {
   max-width: 1400px;
   margin: 0 auto;
   h1,
-  h2 {
+  h2,
+  h3,
+  h4 {
     font-family: 'Forum' !important;
   }
   h1 {
