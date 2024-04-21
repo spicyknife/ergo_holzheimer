@@ -19,6 +19,14 @@ app-root {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'SourceSans';
+  src: url('../src/assets/fonts/SourceSans3-ExtraLight.woff2') format('woff2'),
+      url('../src/assets/fonts/SourceSans3-ExtraLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   color: #2c1c0a;
@@ -29,7 +37,7 @@ body {
   background-color: #f8f6f1;
   // background-color: #c4b7ac;
   font-size: 1em;
-  font-family: source-sans-pro, sans-serif;
+  font-family: 'SourceSans', sans-serif;
   font-weight: 200;
   font-style: normal;
   display: flex;
@@ -39,7 +47,7 @@ body {
 p {
   line-height: 1.8em;
   font-weight: 100;
-  font-family: source-sans-pro, sans-serif;
+  font-family: 'SourceSans', sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 1.1em;
@@ -79,7 +87,7 @@ h2 {
 }
 h2 {
   &.subline {
-    font-family: source-sans-pro, sans-serif !important;
+    font-family: 'SourceSans', sans-serif !important;
     font-weight: 200;
     font-style: normal;
     font-size: 1.2em;
